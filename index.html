@@ -196,18 +196,22 @@
       font-style: italic;
       color: var(--gray);
     }
+   .lang-bar-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+        }
+    
     .lang-bar {
-      display: inline-block;
-      width: 100px;
+      flex: 1;
+      max-width: 120px;
       height: 8px;
       background: var(--border);
       border-radius: 4px;
       overflow: hidden;
-      margin-left: 0.5rem;
-      vertical-align: middle;
     }
+    
     .lang-bar-fill {
-      display: block;
       height: 100%;
       background: var(--accent);
       width: 70%;
@@ -380,10 +384,12 @@
 
       <p style="margin-top: 1.5rem;">
       
-         <div class="lang-bar"> 
-           <strong data-en="English:" data-es="Inglés:">Inglés:</strong> 
-           <div class="lang-bar-fill"></div>
-         </div>
+        <div class="lang-bar-container">
+          <strong data-en="English" data-es="Inglés"></strong>
+          <div class="lang-bar">
+            <div class="lang-bar-fill"></div>
+          </div>
+        </div>
       </p>
     </section>
 
