@@ -402,50 +402,62 @@
     </footer>
   </div>
 
-  <script>
-    const themeToggle = document.getElementById('themeToggle');
-    const langToggle = document.getElementById('langToggle');
-    const body = document.body;
+ <script>
+  const themeToggle = document.getElementById('themeToggle');
+  const langToggle = document.getElementById('langToggle');
+  const body = document.body;
 
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    const savedLang = localStorage.getItem('lang') || 'es';
-    body.setAttribute('data-theme', savedTheme);
-    body.setAttribute('data-lang', savedLang);
-    if (savedTheme === 'light') themeToggle.classList.add('active');
-    if (savedLang === 'en') {
-      langToggle.classList.add('active');
-      langToggle.querySelector('.flag-es').style.opacity = '0.5';
-      langToggle.querySelector('.flag-en').style.opacity = '1';
- 
-    }  else if({
-      langToggle.classList.add('active');
-      langToggle.querySelector('.flag-es').style.opacity = '1';
-      langToggle.querySelector('.flag-en').style.opacity = '0.5';
-    }
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  const savedLang = localStorage.getItem('lang') || 'es';
+  body.setAttribute('data-theme', savedTheme);
+  body.setAttribute('data-lang', savedLang);
 
-    function updateLanguage() {
-      document.querySelectorAll('[data-en][data-es]').forEach(el => {
-        el.textContent = el.getAttribute(`data-${body.getAttribute('data-lang')}`);
-      });
+  if (savedTheme === 'light') themeToggle.classList.add('active');
+
+  // Función para actualizar las banderas según idioma actual
+  function updateFlags(lang) {
+    const esFlag = langToggle.querySelector('.flag-es');
+    const enFlag = langToggle.querySelector('.flag-en');
+    if (lang === 'en') {
+      esFlag.style.opacity = '0.5';
+      enFlag.style.opacity = '1';
+    } else {
+      esFlag.style.opacity = '1';
+      enFlag.style.opacity = '0.5';
     }
+  }
+
+  // Función para actualizar el texto segun idioma
+  function updateLanguage() {
+    document.querySelectorAll('[data-en][data-es]').forEach(el => {
+      el.textContent = el.getAttribute(`data-${body.getAttribute('data-lang')}`);
+    });
+  }
+
+  // Inicialización
+  updateLanguage();
+  updateFlags(savedLang);
+
+  // Toggle del tema
+  themeToggle.addEventListener('click', () => {
+    const isDark = body.getAttribute('data-theme') === 'dark';
+    const newTheme = isDark ? 'light' : 'dark';
+    body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    themeToggle.classList.toggle('active');
+  });
+
+  // Toggle del idioma
+  langToggle.addEventListener('click', () => {
+    const isEs = body.getAttribute('data-lang') === 'es';
+    const newLang = isEs ? 'en' : 'es';
+    body.setAttribute('data-lang', newLang);
+    localStorage.setItem('lang', newLang);
+    langToggle.classList.toggle('active');
     updateLanguage();
+    updateFlags(newLang);
+  });
+</script>
 
-    themeToggle.addEventListener('click', () => {
-      const isDark = body.getAttribute('data-theme') === 'dark';
-      const newTheme = isDark ? 'light' : 'dark';
-      body.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      themeToggle.classList.toggle('active');
-    });
-
-    langToggle.addEventListener('click', () => {
-      const isEs = body.getAttribute('data-lang') === 'es';
-      const newLang = isEs ? 'en' : 'es';
-      body.setAttribute('data-lang', newLang);
-      localStorage.setItem('lang', newLang);
-      langToggle.classList.toggle('active');
-      updateLanguage();
-    });
-  </script>
 </body>
 </html>
