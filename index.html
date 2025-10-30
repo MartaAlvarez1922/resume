@@ -416,6 +416,11 @@
       langToggle.classList.add('active');
       langToggle.querySelector('.flag-es').style.opacity = '0.5';
       langToggle.querySelector('.flag-en').style.opacity = '1';
+ 
+    }  else if({
+      langToggle.classList.add('active');
+      langToggle.querySelector('.flag-es').style.opacity = '1';
+      langToggle.querySelector('.flag-en').style.opacity = '0.5';
     }
 
     function updateLanguage() {
