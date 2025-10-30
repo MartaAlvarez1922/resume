@@ -7,27 +7,28 @@
   <meta name="description" content="Sales Manager & Digital Marketing Expert | +10 años en growth, estrategia y client-centric | Madrid">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="icon" href="https://github.com/foto.jpg" type="image/png">
+  <link rel="icon" href="https://github.com/foto.png" type="image/png">
   <style>
     :root {
-      --bg: #0f0f1a;
-      --card: #1a1a2e;
-      --text: #e0e0ff;
-      --accent: #ff6b6b;
-      --accent-light: #ff8787;
-      --gray: #b0b0cc;
-      --border: #333;
-      --shadow: rgba(255, 107, 107, 0.2);
+      /* Verde profesional */
+      --bg: #0a1a0f;
+      --card: #16251a;
+      --text: #e0ffe6;
+      --accent: #4ade80;     /* Verde principal */
+      --accent-light: #6ee7a0;
+      --gray: #a0c4a8;
+      --border: #2a4d33;
+      --shadow: rgba(74, 222, 128, 0.25);
     }
     [data-theme="light"] {
-      --bg: #f9f9fb;
+      --bg: #f8fdfa;
       --card: #ffffff;
-      --text: #1a1a2e;
-      --accent: #e63946;
-      --accent-light: #f15a5a;
-      --gray: #666;
-      --border: #eee;
-      --shadow: rgba(230, 57, 70, 0.15);
+      --text: #0a1a0f;
+      --accent: #16a34a;
+      --accent-light: #22c55e;
+      --gray: #4b6f56;
+      --border: #d0e6d6;
+      --shadow: rgba(34, 197, 94, 0.15);
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -74,7 +75,8 @@
     .theme-toggle.active .sun { transform: translateX(26px); opacity: 0; }
     .theme-toggle.active .moon { transform: translateX(0); opacity: 1; }
     .lang-toggle img { border-radius: 50%; }
-    .lang-toggle.active img { transform: scale(1.1); }
+    .lang-toggle.active .flag-en { opacity: 1; transform: scale(1.1); }
+    .lang-toggle.active .flag-es { opacity: 0.5; }
     .avatar {
       width: 140px; height: 140px; border-radius: 50%;
       border: 5px solid var(--accent);
@@ -176,7 +178,7 @@
       display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem;
     }
     .skill {
-      background: rgba(255, 107, 107, 0.15);
+      background: rgba(74, 222, 128, 0.15);
       color: var(--accent);
       padding: 0.5rem 1rem;
       border-radius: 30px;
@@ -240,8 +242,8 @@
     <!-- ABOUT -->
     <section>
       <h2 data-en="About Me" data-es="Sobre Mí">Sobre Mí</h2>
-      <p data-en="Digital marketing professional with over 10 years of experience in growth, commercial strategy, and client management. Passionate about turning complex challenges into growth opportunities, leading teams with business vision, and maximizing ROI through data and creativity. Expert in programmatic, social, SEM, affiliation, and loyalty. Curious, solution-oriented, and always results-driven." data-es="Profesional del marketing digital con más de 10 años de experiencia en growth, estrategia comercial y gestión de clientes. Me apasiona transformar retos complejos en oportunidades de crecimiento, liderar equipos con visión de negocio y maximizar el ROI a través de datos y creatividad. Experta en programática, social, SEM, afiliación y fidelización. Curiosa, resolutiva y siempre enfocada en resultados.">
-        Profesional del <span class="highlight">marketing digital</span> con más de <strong>10 años de experiencia</strong>...
+      <p data-en="Digital marketing professional with over 10 years of experience in growth, commercial strategy, and client management. Passionate about turning complex challenges into growth opportunities, leading teams with business vision, and maximizing ROI through data and creativity. Expert in programmatic, social, SEM, affiliation, and loyalty. Curious, solution-oriented, and always results-driven." data-es="Profesional del marketing digital orientada a resultados con más de 10 años de experiencia. Me motiva transformar retos complejos en oportunidades de crecimiento y el aprendizaje continuo. Creo firmemente en el poder del trabajo colaborativo, me considero una persona curiosa, con un alto sentido de la responsabilidad y actitud resolutiva.">
+        Profesional del <span class="highlight">marketing digital</span> orientada a resultados...
       </p>
     </section>
 
@@ -249,20 +251,71 @@
     <section>
       <h2 data-en="Professional Experience" data-es="Experiencia Profesional">Experiencia Profesional</h2>
 
+      <!-- JAKALA -->
       <div class="card">
         <div class="job-title" data-en="Sales Manager" data-es="Sales Manager">Sales Manager</div>
         <div class="company" data-en="JAKALA Iberia" data-es="JAKALA Iberia">JAKALA Iberia</div>
         <div class="date" data-en="2016 – Present | Madrid" data-es="2016 – Presente | Madrid">2016 – Presente | Madrid</div>
         <ul>
-          <li data-en="Managed internal Trading Desk and commercial team (4 people)." data-es="Gestión del Trading Desk interno y equipo comercial (4 personas).">Gestión del <strong>Trading Desk interno</strong> y equipo comercial (4 personas).</li>
-          <li data-en="Client acquisition and strategic campaign planning (+60 clients)." data-es="Captación de nuevos clientes y planificación estratégica de campañas (+60 clientes).">Captación de nuevos clientes y planificación estratégica de campañas (+60 clientes).</li>
-          <li data-en="Budget negotiation, supplier management, and campaign closure." data-es="Negociación de presupuestos, proveedores y cierre de campañas.">Negociación de presupuestos, proveedores y cierre de campañas.</li>
-          <li data-en="Led launch of Engagement & Loyalty line (2024) → +€1M billed." data-es="Lanzamiento de nueva línea de Engagement & Loyalty (2024) → +1M€ facturado.">Lanzamiento de nueva línea de <strong>Engagement & Loyalty</strong> (2024) → +1M€ facturado.</li>
+          <li data-en="Managed internal Trading Desk and commercial team (4 people)." data-es="Gestión del Trading Desk interno de la compañía.">Gestión del Trading Desk interno de la compañía.</li>
+          <li data-en="Client acquisition and strategic planning of programmatic, social, SEM, and affiliation campaigns (+60 clients)." data-es="Identificación de oportunidades así como captación de nuevos clientes.">Identificación de oportunidades así como captación de nuevos clientes.</li>
+          <li data-en="Budget negotiation, supplier management, and campaign closure." data-es="Planificación estratégica de las campañas de programática, social, SEM y afiliación (+60 clientes).">Planificación estratégica de las campañas...</li>
+          <li data-en="Development of commercial proposals, RFPs, and personalized presentations." data-es="Gestión de proveedores (tecnologías o herramientas que ayuden en la consecución de resultados).">Gestión de proveedores...</li>
+          <li data-en="Coordination with operations and marketing teams." data-es="Negociación de presupuestos y condiciones comerciales.">Negociación de presupuestos...</li>
+          <li data-en="Results tracking, KPI reporting, and campaign optimization to maximize ROI." data-es="Cierres de campañas y facturación.">Cierres de campañas y facturación.</li>
+          <li data-en="Definition and execution of the commercial team's sales strategy." data-es="Elaboración y control de forecast y pipeline.">Elaboración y control de forecast y pipeline.</li>
+          <li data-en="Creation of new business lines and support in new product development." data-es="Desarrollo de propuestas comerciales, presentaciones personalizadas y apoyo para RFPs.">Desarrollo de propuestas comerciales...</li>
+          <li data-en="Led launch of Engagement & Loyalty line (2024) → +€1M billed." data-es="Coordinación de las campañas con el equipo de operaciones y marketing.">Coordinación de las campañas...</li>
+          <li data-en="+25% growth in 2024." data-es="Realizar seguimiento de resultados, reportar métricas clave y optimizar campañas para maximizar el retorno de inversión del cliente.">Realizar seguimiento de resultados...</li>
+          <li data-es="Mantener una relación constante con los clientes para detectar nuevas oportunidades de negocio y fidelizarlos.">Mantener una relación constante...</li>
+          <li data-es="Definición y ejecución de la estrategia de venta del equipo comercial.">Definición y ejecución de la estrategia...</li>
+          <li data-es="Creación nuevas líneas de negocio.">Creación nuevas líneas de negocio.</li>
+          <li data-es="Apoyo en desarrollo de productos nuevos.">Apoyo en desarrollo de productos nuevos.</li>
+          <li data-es="+25% growth 2024.">+25% growth 2024.</li>
         </ul>
       </div>
 
-      <!-- Más experiencias... (igual con data-en y data-es) -->
-      <!-- (Omito por brevedad, pero están en el código completo abajo) -->
+      <!-- THE COCKTAIL -->
+      <div class="card">
+        <div class="job-title" data-en="Finance Team" data-es="Equipo de Finanzas">Equipo de Finanzas</div>
+        <div class="company" data-en="The Cocktail" data-es="The Cocktail">The Cocktail</div>
+        <div class="date" data-en="2011 – 2016 | Madrid" data-es="2011 – 2016 | Madrid">2011 – 2016 | Madrid</div>
+        <ul>
+          <li data-en="Managed billing, collections, and payments, ensuring compliance with agreed deadlines." data-es="Gestión de la facturación, cobros y pagos, asegurando el cumplimiento de los plazos acordados con clientes y proveedores.">Gestión de la facturación...</li>
+          <li data-en="Collaborated with strategy, technology, and operations teams to ensure financial viability of projects." data-es="Colaboración con equipos de estrategia, tecnología y operaciones para garantizar la viabilidad financiera de los proyectos.">Colaboración con equipos...</li>
+          <li data-en="Treasury management: Controlled cash flows, payment and collection forecasts, and ensured liquidity." data-es="Gestión de tesorería: Controlar los flujos de caja, previsiones de pagos y cobros, y asegurar la liquidez necesaria.">Gestión de tesorería...</li>
+        </ul>
+      </div>
+
+      <!-- AVANTFORCE -->
+      <div class="card">
+        <div class="job-title" data-en="Store Director & Commercial Training" data-es="Directora de tienda y capacitación comercial">Directora de tienda y capacitación comercial</div>
+        <div class="company" data-en="Avantforce S.L (Iberdrola)" data-es="Avantforce S.L (Iberdrola)">Avantforce S.L (Iberdrola)</div>
+        <div class="date" data-en="2008 – 2011 | Madrid" data-es="2008 – 2011 | Madrid">2008 – 2011 | Madrid</div>
+        <ul>
+          <li data-en="Coordinated physical store for customer service." data-es="Coordinadora de punto físico (tienda) de atención al cliente.">Coordinadora de punto físico...</li>
+          <li data-en="Coordinated call center (contract verification)." data-es="Coordinadora del call center (verificación de contratos).">Coordinadora del call center...</li>
+          <li data-en="Trained commercial team on products and sales techniques." data-es="Formadora del equipo comercial sobre productos y técnicas de venta.">Formadora del equipo comercial...</li>
+        </ul>
+      </div>
+
+      <!-- REPOSTERÍA MARKIVA -->
+      <div class="card">
+        <div class="job-title" data-en="Co-Founder" data-es="Socia fundadora">Socia fundadora</div>
+        <div class="company" data-en="Repostería Markiva" data-es="Repostería Markiva">Repostería Markiva</div>
+        <div class="date" data-en="2014 – 2016 | Madrid" data-es="2014 – 2016 | Madrid">2014 – 2016 | Madrid</div>
+        <ul>
+          <li data-en="Full social media management." data-es="Gestión integral de redes sociales.">Gestión integral de redes sociales.</li>
+          <li data-en="Product definition and pricing." data-es="Definición producto y marcaje de precios.">Definición producto y marcaje de precios.</li>
+          <li data-en="Marketing strategy development." data-es="Desarrollo estrategia de marketing.">Desarrollo estrategia de marketing.</li>
+          <li data-en="Commercial management and customer service." data-es="Gestión comercial y atención al cliente.">Gestión comercial y atención al cliente.</li>
+          <li data-en="Visual content creation and copywriting." data-es="Creación de contenido visual y copywriting.">Creación de contenido visual y copywriting.</li>
+          <li data-en="Management of collaborations and alliances." data-es="Gestión de colaboraciones y alianzas.">Gestión de colaboraciones y alianzas.</li>
+          <li data-en="Design and execution of promotions and special campaigns." data-es="Diseño y ejecución de promociones y campañas especiales.">Diseño y ejecución de promociones...</li>
+          <li data-en="Sales channel management." data-es="Gestión del canal de venta.">Gestión del canal de venta.</li>
+          <li data-en="Personalized attention and customer loyalty." data-es="Atención personalizada y fidelización.">Atención personalizada y fidelización.</li>
+        </ul>
+      </div>
     </section>
 
     <!-- LOGROS -->
@@ -271,11 +324,11 @@
       <div class="achievements">
         <div class="achievement-card">
           <h3 data-en="+35% Profitability" data-es="+35% Rentabilidad">+35% Rentabilidad</h3>
-          <p data-en="Designed and implemented a new production line increasing area profitability by 35%." data-es="Diseñé e implementé una nueva línea de producción que incrementó la rentabilidad del área en un 35%.">Diseñé e implementé una nueva línea de producción...</p>
+          <p data-en="Designed and implemented a new production line increasing area profitability by 35%." data-es="Ideé, desarrollé e implementé una nueva línea de producción que incrementó la rentabilidad del área en un 35%.">Ideé, desarrollé e implementé...</p>
         </div>
         <div class="achievement-card">
           <h3 data-en="+€1M Billed" data-es="+1M€ Facturado">+1M€ Facturado</h3>
-          <p data-en="Led launch of Engagement & Loyalty in 2024, generating over €1 million." data-es="Lideré el lanzamiento de Engagement & Loyalty en 2024, generando más de 1 millón de euros.">Lideré el lanzamiento de Engagement & Loyalty...</p>
+          <p data-en="Led launch of Engagement & Loyalty in 2024, generating over €1 million." data-es="Colaboré en el lanzamiento de una nueva línea de negocio de Engagement & Loyalty en 2024 facturando más de 1MM.">Colaboré en el lanzamiento...</p>
         </div>
       </div>
     </section>
@@ -284,24 +337,20 @@
     <section>
       <h2 data-en="Skills" data-es="Habilidades">Habilidades</h2>
       <div class="skills-grid">
-        <div class="skill" data-en="Team Management" data-es="Gestión de Equipos">Gestión de Equipos</div>
-        <div class="skill" data-en="Active Listening" data-es="Escucha Activa">Escucha Activa</div>
-        <div class="skill" data-en="Business Vision" data-es="Visión de Negocio">Visión de Negocio</div>
-        <div class="skill" data-en="Results Analysis" data-es="Análisis de Resultados">Análisis de Resultados</div>
-        <div class="skill" data-en="Client Centric" data-es="Client Centric">Client Centric</div>
-        <div class="skill" data-en="Sales Focus" data-es="Foco en Ventas">Foco en Ventas</div>
-        <div class="skill" data-en="Programmatic" data-es="Programática">Programática</div>
-        <div class="skill" data-en="Social Ads" data-es="Social Ads">Social Ads</div>
-        <div class="skill" data-en="SEM" data-es="SEM">SEM</div>
-        <div class="skill" data-en="Growth Strategy" data-es="Growth Strategy">Growth Strategy</div>
+        <div class="skill" data-en="Team Management" data-es="Gestión de equipos">Gestión de equipos</div>
+        <div class="skill" data-en="Active Listening" data-es="Escucha activa">Escucha activa</div>
+        <div class="skill" data-en="Business Vision" data-es="Visión de negocio">Visión de negocio</div>
+        <div class="skill" data-en="Results Analysis" data-es="Análisis y optimización de resultados">Análisis y optimización de resultados</div>
+        <div class="skill" data-en="Client Centric" data-es="Client centric">Client centric</div>
+        <div class="skill" data-en="Sales Focus" data-es="Foco en ventas">Foco en ventas</div>
       </div>
     </section>
 
     <!-- EDUCACIÓN Y CERTIFICACIÓN -->
     <section>
       <h2 data-en="Education & Training" data-es="Educación y Formación">Educación y Formación</h2>
-      <p data-en="<strong>Marketing + Business Administration</strong><br>Chamber of Commerce of Madrid (2001 – 2003)" data-es="<strong>Marketing + Dirección y Administración de Empresas</strong><br>Cámara de Comercio de Madrid (2001 – 2003)">
-        <strong>Marketing + Dirección y Administración de Empresas</strong><br>Cámara de Comercio de Madrid (2001 – 2003)
+      <p data-en="<strong>Marketing + Business Administration</strong><br>Chamber of Commerce of Madrid (2001 – 2003)" data-es="<strong>Marketing + Dirección y administración de empresas</strong><br>Cámara de Comercio de Madrid (2001 – 2003)">
+        <strong>Marketing + Dirección y administración de empresas</strong><br>Cámara de Comercio de Madrid (2001 – 2003)
       </p>
       
       <div class="certification">
@@ -320,20 +369,21 @@
   </div>
 
   <script>
-    // Theme & Language Toggle
     const themeToggle = document.getElementById('themeToggle');
     const langToggle = document.getElementById('langToggle');
     const body = document.body;
 
-    // Load saved preferences
     const savedTheme = localStorage.getItem('theme') || 'dark';
     const savedLang = localStorage.getItem('lang') || 'es';
     body.setAttribute('data-theme', savedTheme);
     body.setAttribute('data-lang', savedLang);
     if (savedTheme === 'light') themeToggle.classList.add('active');
-    if (savedLang === 'en') langToggle.classList.add('active');
+    if (savedLang === 'en') {
+      langToggle.classList.add('active');
+      langToggle.querySelector('.flag-es').style.opacity = '0.5';
+      langToggle.querySelector('.flag-en').style.opacity = '1';
+    }
 
-    // Update text
     function updateLanguage() {
       document.querySelectorAll('[data-en][data-es]').forEach(el => {
         el.textContent = el.getAttribute(`data-${body.getAttribute('data-lang')}`);
@@ -341,7 +391,6 @@
     }
     updateLanguage();
 
-    // Theme toggle
     themeToggle.addEventListener('click', () => {
       const isDark = body.getAttribute('data-theme') === 'dark';
       const newTheme = isDark ? 'light' : 'dark';
@@ -350,7 +399,6 @@
       themeToggle.classList.toggle('active');
     });
 
-    // Language toggle
     langToggle.addEventListener('click', () => {
       const isEs = body.getAttribute('data-lang') === 'es';
       const newLang = isEs ? 'en' : 'es';
